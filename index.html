@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>My portfolio</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__header">
+        <div class="nav__logo">
+          <a href="#">Daniel</a>
+        </div>
+        <div class="nav__menu__btn" id="menu-btn">
+          <i class="ri-menu-line"></i>
+        </div>
+      </div>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#project">PROJECTS</a></li>
+        <li><a href="#">SKILLS</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+      <div class="nav__btns">
+        <button class="btn"><i class="ri-shopping-bag-line"></i></button>
+      </div>
+    </nav>
+
+    <div class="container" id="home">
+      <div class="container__left">
+        <h1>I build clean, functional, and responsive Websites.</h1>
+        <div class="container_description">
+          <p>
+            Hi, I’m Daniel Mlegi  a passionate web developer who learns by
+            building real solutions. I create responsive, functional, and visual
+            appearing websites. I love collaborating with experienced designers
+            to turn great ideas into seamless digital experiences.
+          </p>
+        </div>
+
+        <div class="container__btn">
+          <a href="#contact"><button class="btn">GET IN TOUCH</button></a>
+        </div>
+      </div>
+      <div class="container__right">
+          <img src="assets/responsive.png" alt="yoga image">
+      </div>
+    </div> 
+
+    <div class="project" id="project">
+      <div class="project__description">
+        <h2>Sample projects</h2>
+        <p>
+          Renting a car with us is simple! Choose your vehicle, 
+           pick your dates, and complete your booking. We'll handle the rest, 
+           ensuring a smooth start to your journey.
+        </p>
+      </div>
+      <div class="project__cards">
+        <div class="project__card">
+        <h3>Project 01.</h3>
+        <p>
+         I create responsive, functional, and visual
+         appearing websites. I love collaborating with experienced designers
+         to turn great ideas into seamless digital experiences.
+        </p>
+
+        <div class="project__btn">
+          <button class="btn">View Demo</button>
+        </div>
+        </div>
+
+        <div class="project__card">
+        <h3>Project 02.</h3>
+        <p>
+         I create responsive, functional, and visual
+         appearing websites. I love collaborating with experienced designers
+         to turn great ideas into seamless digital experiences.
+        </p>
+        <div class="project__btn">
+          <button class="btn">View Demo</button>
+        </div>
+        </div>
+
+        <div class="project__card">
+        <h3>Project 03.</h3>
+        <p>
+         I create responsive, functional, and visual
+         appearing websites. I love collaborating with experienced designers
+         to turn great ideas into seamless digital experiences.
+        </p>
+
+        <div class="project__btn">
+          <button class="btn">View Demo</button>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="contact">
+      <div class="contact__form" id="contact">
+            <h2 class="contact__header">Boook your project</h2>
+            <h3>Your Name <span class="required">*</span></h3>
+            <!-- <div class="hint">Enter Your name </div> -->
+            <input type="text" id="name" placeholder="Name">
+
+            <h3>Your E-mail <span class="required">*</span></h3>
+            <!-- <div class="hint">Enter your Email </div> -->
+            <input type="text" id="email" placeholder="Email">
+
+            <h3>Project Details<span class="required">*</span></h3>
+            <div class="hint">Minimum 50 characters</div>
+            <textarea id="details" placeholder="Include project details, requirements or goals ....."></textarea>
+
+            <h3>Target Date <span class="required">*</span></h3>
+            <div class="hint">Select when you need the project to be completed </div>
+            <select id="date">
+              <option value="">Please select</option>
+              <option>1 Week</option>
+              <option>2 Week</option>
+              <option>3 Week</option>
+              <option>1 Month</option>
+              <option>More than 1 Month</option>
+            </select>
+
+            <h3>Project Budget<span class="required">*</span></h3>
+            <div class="hint">Minimum project rate is $500 (USD)</div>
+            <input type="number" id="budget" placeholder="$ Enter amount">
+
+            <button>Send Message</button>
+      </div>
+    </section>
+
+
+    <div class="footer">
+      <div class="container__footer">
+        <div class="list__card">
+          <h3>Contact</h3>
+          <ul>
+            <li>Adress: P.O. Box 713, Ilemela-Mwanza, Tanzania</li>
+            <li>Email:danielmlegi01@gmail.com</li>
+            <li>Phone: +255 764 372075</li>
+          </ul>
+        </div>
+
+        <div class="list__card">
+          <h3>Projects</h3>
+          <ul>
+            <li>Project 01</li>
+            <li>Project 02</li>
+            <li>Project 03</li>
+          </ul>
+        </div>
+
+        <div class="list__card">
+          <h3>Follow me</h3>
+          <ul>
+            <li>Facebook</li>
+            <li>Instagram</li>
+            <li>X</li>
+          </ul>
+        </div>
+        
+      </div>
+
+      <p>© 2026 Daniel Mlegi. All rights reserved.</p>
+
+    </div>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
